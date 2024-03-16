@@ -4,7 +4,6 @@ import { RiMenu3Fill } from 'react-icons/ri';
 import logo from '../assets/Logo.85c67ebf (1).svg';
 import { CiSaveDown2 } from 'react-icons/ci';
 import { motion, useScroll } from 'framer-motion';
-import {} from 'framer-motion';
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -124,9 +123,9 @@ const Navbar = () => {
 					initial='closed'
 					exit='exit'
 					variants={variants}
-					className='fixed right-0 top-0 h-full bg-black z-10  mt-20 w-full  shadow-lg lg:hidden'
+					className='fixed right-0 top-0 h-full bg-black z-10  mt-20 w-full flex flex-col justify-center  gap-6 items-center  shadow-lg lg:hidden px-6'
 				>
-					<ul className='flex flex-col items-center justify-center w-1/2 h-2/3 mx-auto gap-7'>
+					<ul className='flex flex-col items-center w-full mx-auto gap-7'>
 						<motion.li variants={listVariants} className='inline-blok p-2'>
 							<a
 								className='block  text-2xl font-semibold text-white hover:text-gray-600 transition-colors'
@@ -164,7 +163,7 @@ const Navbar = () => {
 					<motion.a
 						variants={listVariants}
 						href=''
-						className='max-w-30 w-fit mx-auto flex items-center text-lg justify-center gap-2 text-black rounded-md cursor-pointer  px-4 py-2 bg-white '
+						className='max-w-30 w-full mx-auto flex items-center text-lg justify-center gap-2 text-black rounded-md cursor-pointer  px-4 py-2 bg-white '
 					>
 						Resume <CiSaveDown2 className='text-2xl ' />
 					</motion.a>
