@@ -5,3 +5,6 @@
 body {
 	font-family: 'Sora', sans-serif;
 }
+.form-error {
+  @apply border-red-500 border-2;
+}
